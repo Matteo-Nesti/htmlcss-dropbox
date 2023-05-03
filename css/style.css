@@ -19,6 +19,17 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
 
 /* utility */
 
@@ -54,16 +65,38 @@ body {
     width: 60%;
     height: 400px;
 }
+
+.btn a{
+    color: white;
+    background-color: #0061ff;
+    padding: 5px 10px;
+}
+
 /* header */
 
 header {
     min-height: 90px;
-    padding: 5px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
+}
+
+.header-left, .header-right {
+    display: flex;
     align-items: center;
 }
 
+.link-header a {
+    color: black;
+}
+
+.link-header ul{
+    display: flex;
+}
+
+header li {
+    margin: 0 20px;
+}
 
 /* spotlight */
 
