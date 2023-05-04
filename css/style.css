@@ -20,6 +20,7 @@ body {
 }
 
 a {
+    font-size: 15px;
     text-decoration: none;
     color: black;
 }
@@ -38,6 +39,16 @@ h1 {
     font-weight: 900;
 }
 
+h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
 /* utility */
 
 .large-container {
@@ -46,7 +57,7 @@ h1 {
 }
 
 .small-container {
-    max-width: 1080px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 .row {
@@ -55,8 +66,8 @@ h1 {
 }
 
 .small-col {
-    width: calc(100% / 3);
-    height: 400px;
+    width: calc(100% / 3 - 20px);
+    margin: 0 10px;
 }
 
 .single-col {
@@ -67,7 +78,6 @@ h1 {
 .mid-col {
     max-height:400px ;
     width: 30%;
-    position: relative;
 }
 .large-col {
     width: 70%;
@@ -82,9 +92,18 @@ h1 {
 .direction-col {
     display: flex;
     flex-direction: column;
+}
+.gap40{
     gap: 40px;
 }
 
+.light-border {
+    border: 1px solid lightgrey;
+}
+
+.pos-relative {
+    position: relative;
+}
 
 
 /* header */
@@ -115,7 +134,7 @@ header li {
     background-color:#b4d0e7 ;
     padding: 80px 0;
     max-height: 750px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 
 .spotlight-container img {
@@ -133,12 +152,107 @@ header li {
     left: 0;
 }
 
-
-
 /* subscription */
 
 .subscription {
     text-align: left;
+}
+
+.check-plain-sub {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+/* sottotitolo scelta piano annuale/mensile */
+
+.sub-check {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: lightgray solid 2px;
+    margin-right: 5px;
+}
+
+.sub-check:hover {
+    border: 6px solid #0061ff;
+}
+
+.montlhy-sub {
+    margin-right: 40px;
+}
+
+/* centratura colonne abbonamento */
+
+.row.subscription {
+    margin: 0 -10px;
+}
+
+/* header colonne abbonamento*/
+
+.small-col-header {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+/* body colonne abbonamento*/
+
+.small-col-body {
+    padding: 30px;
+}
+
+.title-plain {
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.title-plain>div {
+    color: gray;
+    font-size: 15px;
+}
+
+.plain-info h4 {
+    margin-bottom: 20px;
+}
+
+.description-plain {
+    display: flex;
+}
+
+.description-plain>div {
+    margin: 0 5px 30px 0;
+    font-size: 15px;
+}
+/* bottoni colonne abbomanento */
+
+.btn.small-col-btn a{
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+}
+
+
+.small-col-btn {
+    margin-bottom: 40px;
+}
+
+.small-col-link>a {
+    text-decoration: underline;
+    color: #0061ff;
+}
+
+/* divisorio colonne abbonamento */
+
+.small-col .divisory {
+    margin: 40px 0 40px 0;
+    width: 20%;
+    border-bottom: 1px solid lightgray;
+}
+
+/* icona descrizione punti salienti del piano  */
+
+.description-plain.info i {
+    color: #0061ff;
 }
 
 /* adv section */
