@@ -72,7 +72,6 @@ h3 {
 
 .single-col {
     width: 100%;
-    height: 400px;
 }
 
 .mid-col {
@@ -86,7 +85,6 @@ h3 {
 .btn a{
     color: white;
     background-color: #0061ff;
-    padding: 5px 15px;
 }
 
 .direction-col {
@@ -113,6 +111,12 @@ header {
     padding: 20px;
     display: flex;
     justify-content: space-between;
+}
+
+/* header btn */
+
+.btn.btn-header a{
+    padding: 5px 10px;
 }
 
 .header-left, .header-right {
@@ -156,6 +160,7 @@ header li {
 
 .subscription {
     text-align: left;
+    margin-bottom: 40px;
 }
 
 .check-plain-sub {
@@ -195,9 +200,9 @@ header li {
     border-bottom: 1px solid lightgray;
 }
 
-/* body colonne abbonamento*/
+/* body colonne padding*/
 
-.small-col-body {
+.padding-col-body {
     padding: 30px;
 }
 
@@ -227,7 +232,7 @@ header li {
 
 .btn.small-col-btn a{
     text-align: center;
-    display: block;
+    display: block;  
     padding: 10px 0;
 }
 
@@ -254,6 +259,28 @@ header li {
 .description-plain.info i {
     color: #0061ff;
 }
+
+/* colonna singola */
+
+.single-col h3 {
+    margin-bottom:20px ;
+}
+
+.single-col p {
+    padding-right: 250px;
+    margin-top: 40px;
+}
+
+/*bottone colonna singola */
+
+.btn.single-col-btn a{
+    text-align: center;
+    padding: 10px 30px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
 
 /* adv section */
 
