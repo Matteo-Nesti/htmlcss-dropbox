@@ -21,6 +21,7 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 ul {
@@ -29,6 +30,12 @@ ul {
 
 img {
     display: block;
+}
+
+h1 {
+    font-size: 80px;
+    margin-bottom: 50px;
+    font-weight: 900;
 }
 
 /* utility */
@@ -58,19 +65,27 @@ img {
 }
 
 .mid-col {
-    width: 40%;
-    height: 400px;
+    max-height:400px ;
+    width: 30%;
+    position: relative;
 }
 .large-col {
-    width: 60%;
-    height: 400px;
+    width: 70%;
 }
 
 .btn a{
     color: white;
     background-color: #0061ff;
-    padding: 5px 10px;
+    padding: 5px 15px;
 }
+
+.direction-col {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
 
 /* header */
 
@@ -86,10 +101,6 @@ header {
     align-items: center;
 }
 
-.link-header a {
-    color: black;
-}
-
 .link-header ul{
     display: flex;
 }
@@ -99,6 +110,28 @@ header li {
 }
 
 /* spotlight */
+
+.spotlight-container {
+    background-color:#b4d0e7 ;
+    padding: 80px 0;
+    max-height: 750px;
+    margin-bottom: 200px;
+}
+
+.spotlight-container img {
+    max-width: 100%;
+}
+
+.spotlight-container .btn>a {
+    padding: 10px 15px;
+}
+
+.arrow-icon {
+    font-size: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
 
 
 
