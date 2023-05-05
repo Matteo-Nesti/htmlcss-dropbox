@@ -148,6 +148,9 @@ h3 {
     background-color:#0093ce;
 }
 
+.bgc-l-gray {
+    background-color: #f5f5f5;
+}
 
 /* header */
 
@@ -365,9 +368,18 @@ header li {
 .adv .square {
     display: flex;
     flex-wrap: wrap;
+    
     width: calc(100vw / 3 - 6px);
     height: calc(100vw / 3 - 6px); 
 }
+
+.adv .square>img {
+    max-height: 30%;
+    border-bottom:lightgray 1px solid;
+    padding-top: 50px ;
+    width: 40%;
+}
+
 
 .adv .lil-square {
     display: flex;
@@ -382,6 +394,19 @@ header li {
     max-width: 50%;
     filter: invert(100%);
 }
+
+/* free trial */
+
+.free-trial {
+    padding: 100px;
+    background-color: #b4d0e7;
+}
+
+.start-trial{
+    
+    align-items: center;
+}
+
 
 /* footer */
 
