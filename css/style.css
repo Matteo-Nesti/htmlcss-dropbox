@@ -90,7 +90,7 @@ h3 {
     width: 40%;
 }
 
-.btn a{
+.btn {
     color: white;
     background-color: #0061ff;
     display: inline-block;
@@ -152,6 +152,15 @@ h3 {
     background-color: #f5f5f5;
 }
 
+.btn-cont:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.btn:hover {
+    background-color: #2a7bfd;
+    box-shadow: 3px 3px 3px  #adadad;
+}
+
 /* header */
 
 header {
@@ -161,10 +170,14 @@ header {
     justify-content: space-between;
 }
 
+.link-header a{
+    color: #000;
+}
+
 /* header btn */
 
-.btn.btn-header a{
-    padding: 5px 10px;
+.btn.btn-header {
+    padding: 10px 10px;
 }
 
 /* sezioni header */
@@ -197,8 +210,13 @@ header li {
     max-width: 100%;
 }
 
-.spotlight-container .btn>a {
+.btn.btn-spotlight{
     padding: 10px 15px;
+    align-self: flex-start;
+}
+
+.cancel-sub a {
+    color: #000;
 }
 
 .arrow-icon {
@@ -280,7 +298,7 @@ header li {
 }
 /* bottoni colonne abbomanento */
 
-.btn.small-col-btn a{
+.btn.small-col-btn {
     text-align: center;
     display: block;  
     padding: 10px 0;
@@ -320,7 +338,7 @@ header li {
 
 /*bottone colonna singola */
 
-.btn.single-col-btn a{
+.btn.single-col-btn {
     text-align: center;
     padding: 10px 30px;
     position: absolute;
@@ -338,13 +356,14 @@ header li {
     max-width: 100%;
 }
 
-.partners .btn a {
+.partners-btn.btn  {
     color: black;
     background-color: #fff;
     border: 1px solid black;
     padding: 10px 15px;
     margin-top: 40px;
 }
+
 
 
 /* info buisness col */
@@ -387,7 +406,11 @@ header li {
     align-items: center;
     flex-basis: 50%;
     height: 50%;
-    border: 15px red transparent;
+    border: 15px solid rgba(255, 255, 255, 0);
+}
+
+.lil-square:hover{
+    border: 15px solid rgba(255, 255, 255, 0.4);
 }
 
 .lil-square>img {
@@ -398,19 +421,90 @@ header li {
 /* free trial */
 
 .free-trial {
-    padding: 100px;
     background-color: #b4d0e7;
+    padding: 130px;
 }
 
-.start-trial{
-    
-    align-items: center;
+.start-trial h2 {
+    margin: 0;
+    color: #61082b;
+}
+
+.start-trial-btn.btn {
+    color: #000;
+    background-color: #fff;
+    padding: 10px 50px;
+}
+
+
+
+.start-trial .col-40 {
+    padding-top: 15px
+}
+
+/* FAQ */
+
+.faq {
+    border-bottom: #000 1px solid;
+    margin: 0;
+    padding: 40px 0;
+}
+
+.faq i {
+    position: absolute;
+    right:20px;
+}
+
+.faq>p {
+    font-weight: bold;
+}
+
+.favourite-faq {
+    margin-top: 20px;
+    display: none;  
+}
+.faq:hover .favourite-faq {
+    display: block;
+}
+
+.faq:hover i {
+    transform: rotate(180deg);
 }
 
 
 /* footer */
 
+footer {
+    background-color: #000;
+    padding-bottom: 40px;
+}
+
+footer h3, a {
+    color: #fff;
+}
+
 .footer-col {
-    height: 300px;
     width: calc(100% / 5);
+    margin: 100px 0;
+}
+
+.footer-col li {
+    margin-bottom: 15px;
+}
+
+.footer-divisory {
+    border-bottom: #fff solid 1px;
+    width: 10%;
+}
+
+.leng {
+    margin-top: 40px;
+    color: gray; 
+    height: 40px;
+    line-height: 40px;
+
+}
+
+footer a:hover {
+    opacity: 0.5;
 }
